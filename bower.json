@@ -1,0 +1,17 @@
+{
+  "name": "mxkv",
+  "description": "my own website",
+  "main": "index.js",
+  "authors": [
+    "Max Kobilev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mkobilev/mxkv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
