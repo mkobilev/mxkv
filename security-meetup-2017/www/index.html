@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Security meeetup Ростов-на-Дону</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
+
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+        VK.Widgets.CommunityMessages("vk_community_messages", 108379520, {
+            expanded: "1",
+            disableExpandChatSound: "1",
+            disableNewMessagesSound: "1",
+            tooltipButtonText: "Есть вопрос?"
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        <!-- logo image  -->
+                        <span>Security meetup RND</span>
+                        <!-- <img src="__assets/images/logo.png" alt="Security meetup"> -->
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active">
+                        <a data-scroll href="#about">О Митапе</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#speakers">Спикеры</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#schedule">Расписание</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#partner">Партнеры</a>
+                    </li>
+                    <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+   <!--                  <li>
+                        <a data-scroll href="#faq">Q&A</a>
+                    </li> -->
+                    <li>
+                        <a data-scroll href="#photos">Фото</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <h2>7 сентября 2017 / Южный IT-Парк</h2>
+            <h1>Security meetup #3 Ростов-на-Дону</h1>
+            <p>Самое крупное сообщество ИБ специалистов на Юге России</p>
+            <a class="btn btn-white" data-scroll href="#registration">Регистрация</a>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="section-title">О митапе</h3>
+                    <p>С 2016 года совместно с UFO CTF SCHOOL мы проводим Митапы по Информационной безопасности.
+                        Security Meetup #3 - первое в цикле образовательных мероприятий, организованных <strong>лабораторией Информационной Безопасности СКБ "КИТ" ИКТИБ ИТА ЮФУ </strong>
+                    </p>
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6">
+                    <h3 class="section-title multiple-title">Что мы делаем?</h3>
+                    <p>
+
+                    </p>
+                    <ul class="list-arrow-right">
+                        <li>Популяризуем CTF / ИБ движение на юге России</li>
+                        <li>Даем возможность практикам делиться накопленным опытом</li>
+                    </ul>
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <i class="ion-ios-calendar"></i>
+                    <h3>7 сентября
+                        <br>2017</h3>
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Южный IT-Парк
+                        <br>Ростов-на-Дону</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>150
+                        <br>мест</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-speakerphone"></i>
+                    <h3>5
+                        <br>Спикеров</h3>
+
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Спикеры</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                        </figure>
+
+                        <h4>Тюрин Кай</h4>
+
+                        <p>Аспирант Института математики, механики и компьютерных наук имени И. И. Воровича (ЮФУ)</p>
+
+                        <!--                         <ul class="social-block">
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-linkedin-outline"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul> -->
+
+                    </div>
+                    <!-- /.speaker -->
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.jpg">
+                        </figure>
+
+                        <h4>Коновалов Никита</h4>
+
+                        <p>Исследователь безопасности web приложений</p>
+
+                        <!--                         <ul class="social-block">
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-linkedin-outline"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+ -->
+                    </div>
+                    <!-- /.speaker -->
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.jpg">
+                        </figure>
+
+                        <h4>Сторчак Сергей</h4>
+
+                        <p>ПАО "Тагмет", специалист по защите информации</p>
+
+                        <!--                         <ul class="social-block">
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-linkedin-outline"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul> -->
+
+                    </div>
+                    <!-- /.speaker -->
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.jpg">
+                        </figure>
+
+                        <h4>Владимир Кочетков</h4>
+
+                        <p>Руководитель отдела исследований по анализу защищённости приложений, Positive Technologies</p>
+
+                        <!--                         <ul class="social-block">
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-linkedin-outline"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.jpg">
+                        </figure>
+
+                        <h4>Найденко Максим</h4>
+
+                        <p>Исследователь ядра ОС Windows и безопасности бинарных приложений, grey hat, основатель компании Atlasys
+                            (г. Таганрог)</p>
+
+                        <!--                         <ul class="social-block">
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-linkedin-outline"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+ -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--     <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                </div>
+            </div>
+
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="city" id="city" required>
+                                <option readonly>City</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                                <option>City Name 4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="program" id="program" required>
+                                <option readonly>Select Your Program</option>
+                                <option>Program Name 1</option>
+                                <option>Program Name 2</option>
+                                <option>Program Name 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+ -->
+
+
+    <!--     <section id="contribution" class="section bg-image-2 contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back
+                        the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit
+                        your best work.</p>
+
+                    <a class="btn btn-white" href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Расписание</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">13:37</time> -
+                            <time datetime="22:00">13:50</time>
+                        </div>
+                        <h3>Приветственное слово</h3>
+                        <p>Максим Кобилев</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">13:50</time> -
+                            <time datetime="22:00">14:10</time>
+                        </div>
+                        <h3>Fuzzy hashing, или хэши наоборот</h3>
+                        <p>Кай Тюрин</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">14:10</time> -
+                            <time datetime="22:00">14:30</time>
+                        </div>
+                        <h3>Advanced web fuzzing today</h3>
+                        <p>Никита Коновалов</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">14:30</time> -
+                            <time datetime="22:00">14:50</time>
+                        </div>
+                        <h3>Ведение списка разрешенного ПО</h3>
+                        <p>Сергей Сторчак</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">15:00</time> -
+                            <time datetime="22:00">16:00</time>
+                        </div>
+                        <h3>Итак, в вашем коде нашли уязвимость к инъекции...</h3>
+                        <p>Владимир Кочетков</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">16:00</time> -
+                            <time datetime="22:00">17:00</time>
+                        </div>
+                        <h3>Host-only гипервизор для решения задач в ИБ</h3>
+                        <p>Максим Найденко</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Спонсоры и Партнеры</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-1" target=_blank href="http://vk.com/bitsecru"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-2" target=_blank href="http://ictis.sfedu.ru"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-3" target=_blank href="http://sfedu.ru"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-4" target=_blank href="http://vk.com/ufoctf2017"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-5" target=_blank ref="https://www.ptsecurity.com"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-6" target=_blank href="http://south-itpark.ru/"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-7" target=_blank href="http://it-events.com"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-8" target=_blank href="mailto:im@mxkv.ru"></a>
+                </div>
+            </div>
+    </section>
+
+    <!--     <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event FAQs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3>Hello</h3>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+ -->
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Фото прошлых митапов</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-9.jpg">
+                        </li>
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-10.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Место проведения</h3>
+                    <address>
+                        <p>Южный IT-Парк
+                            <br>БЦ "Лига наций"
+                            <br> ул. Суворова 91, 7 этаж
+                            <br> Тел: +7-918-566-59-53
+                            <br> Email: meetup@cybber.ru</p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.47422164442!2d39.730060215617364!3d47.22686917916136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b99f743ed94b%3A0xe41819a9d78ca6be!2z0JvQuNCz0LAg0L3QsNGG0LjQuQ!5e0!3m2!1sru!2sru!4v1509366739485"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--     <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Designed and
+                        <br> Developed by
+                        <a href="http://technextit.com">Technext Limited</a>
+                    </p>
+                    <ul class="social-block">
+                        <li>
+                            <a href="">
+                                <i class="ion-social-vkontakte"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ion-social-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ -->
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

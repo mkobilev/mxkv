@@ -2,14 +2,11 @@
   "name": "mxkv",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "cp -r ./security-meetup-2017/www  ./dist/security-meetup-2017; cp -r ./ufoctf2017/app  ./dist/ufoctf2017"
   },
   "private": true,
   "dependencies": {
+    "node-serialize": "^0.0.4",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

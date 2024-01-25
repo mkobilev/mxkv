@@ -1,0 +1,23 @@
+{
+  "name": "ufoctf2017",
+  "description": "Front page ufoctf.ru",
+  "main": "index.js",
+  "authors": [
+    "Max Kobilev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/auditorika/ufoctf2017",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-translate": "^2.13.1",
+    "angular": "^1.6.1",
+    "firebase": "^3.6.4",
+    "angularfire": "^2.2.0"
+  }
+}

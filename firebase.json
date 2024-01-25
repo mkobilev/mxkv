@@ -6,6 +6,10 @@
     "rewrites": [{
       "source": "**",
       "destination": "/index.html"
+    },
+    {
+      "source": "/ufoctf2017",
+      "destination": "/ufoctf2017/"
     }],
     "headers": [{
         "source": "/build/app/**",
